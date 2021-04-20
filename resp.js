@@ -1,10 +1,10 @@
-burger= document.querySelection('.burger')
-navigation-bar= document.querySelection('.navigaiton-bar')
-navigation-list= document.querySelection('.navigation-list')
-right-nav= document.querySelection('.right-nav')\
+var burger= document.querySelector('.burger')
+var navigationbar= document.querySelector('.navigationbar')
+var navigationlist= document.querySelector('.navigationlist')
+var rightnav= document.querySelector('.rightnav')
 
-burger.addEventListner('click',()=>{
-  right-nav.classList.toggle('v-class-resp');
-  navigation-list.classList.toggle('v-class-resp');
-  navbar.classList.toggle('h-nav-resp');
+burger.addEventListener('click',()=>{
+  rightnav.classList.toggle('v-class-resp');
+  navigationlist.classList.toggle('v-class-resp');
+  navigationbar.classList.toggle('h-nav-resp');
 })
