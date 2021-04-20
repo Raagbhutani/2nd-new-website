@@ -13,34 +13,36 @@
   border:3px solid white;
   border-radius:50px;
 }
-.navigation-bar{
+.navigationbar{
   display:flex;
-  position:fixed;
+  position:sticky;
+  align-items: center;
+  justify-content: center;
   top:0;
   cursor:pointer;
-  z-index: 1;
+  /*z-index: 1;*/
   background-color:black;
   width:100%;
 }
-.navigation-list{
+.navigationlist{
   width:70%;
   display:flex;
   align-items:center;
 }
-.navigation-list li {
+.navigationlist li {
   list-style:none;
   padding:25px 30px;
 }
-.navigation-list li a {
+.navigationlist li a {
   text-decoration:none;
   color:white;
   font-size:20px;
   font-family:'Ubuntu',sans-serif;
 }
-.navigation-list li a:hover{
+.navigationlist li a:hover{
   color:grey;
 }
-.right-nav{
+.rightnav{
   width:30%;
   text-align:right;
   padding: 25px 23px;
@@ -201,7 +203,7 @@
   display:none;
   position:absolute;
   cursor:pointer;
-  right:51px;
+  right:5px;
   top:15px;
 }
 .line{
@@ -209,29 +211,4 @@
   background-color: white;
   height:4px;
   margin:5px 3px;
-}
-/*.left{
-  flex-direction:row-reverse;
-}*/
-
-
-
-
-@media only screen and(max-width:700px)
-{
-  /*.top-wrapper{
-    height:30vh;
-  }*/
-  .navigation-list {
-    flex-direction: column;
-  }
-  .navigation-bar{
-    height:400px;
-    flex-direction:column;
-    transition:all 0.7 ease-out;
-  }
-  .right-nav{
-    text-align:center;
-  }
-
 }
